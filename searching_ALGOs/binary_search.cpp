@@ -22,6 +22,5 @@ int main()
 	VECTORFILL(vec);      //assuming -1 is the breaking point
 	INPUT(a);
 	cout<<binarySearch(a,0,vec.size()-1);
-	
-  return 0;
+	return 0;
 }
