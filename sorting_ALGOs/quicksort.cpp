@@ -1,3 +1,5 @@
+// for sorting a vector we can directly use => sort(vec.begin(),vec.end());
+
 #include <bits/stdc++.h>
 using namespace std;
 
