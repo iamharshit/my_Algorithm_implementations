@@ -16,7 +16,7 @@ void sieve(int n){
 	FOR(i,2,n) sievearr[i]=1;
 	sievearr[n+1]=-1;
 	FOR(i,2,n){
-		if(sievearr[i]==1){
+	 	if(sievearr[i]==1){
 			for(int j=2;i*j<=n;j++) sievearr[i*j]=0;
 		}
 	}
@@ -25,5 +25,5 @@ void sieve(int n){
 int main()
 {
 	sieve(20);
-  return 0;
+  	return 0;
 }
