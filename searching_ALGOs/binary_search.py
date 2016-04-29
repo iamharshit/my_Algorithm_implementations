@@ -1,3 +1,5 @@
+# in python we can directly use my_list.index(<item-to-be-searched>) to find index of an item in a list.
+
 def binary_search(li,item):
     start=0
     end=len(li)-1
