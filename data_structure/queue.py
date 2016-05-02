@@ -29,7 +29,7 @@ class Queue:
         else:
             print "No element to dequeue!!!"
 
-    def peak(self):
+    def peek(self):
         if self.head:
             return self.head.value
         else:
