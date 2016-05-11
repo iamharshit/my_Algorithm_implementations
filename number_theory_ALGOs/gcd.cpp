@@ -4,19 +4,19 @@
 using namespace std;
 
 int gcd(int x,int y){
-	if(y%x==0) return x;
+    if(y%x==0) return x;
     else return gcd(y%x,x);
 }
 
 int main(){
-	int a; cin>>a;
-	int b; cin>>b;
+    int a; cin>>a;
+    int b; cin>>b;
 
-	int big,small;
-	big=(a>b)?a:b;
-	small=(a>b)?b:a;
+    int big,small;
+    big=(a>b)?a:b;
+    small=(a>b)?b:a;
 
-	int the_gcd=gcd(big,small);
+    int the_gcd=gcd(big,small);
 	
-	return 0;
+    return 0;
 }
