@@ -4,7 +4,7 @@
 using namespace std;
 
 int gcd(int x,int y){
-    if(y%x==0) return x;
+	if(y%x==0) return x;
     else return gcd(y%x,x);
 }
 
@@ -18,6 +18,6 @@ int main()
 	small=(a>b)?b:a;
 
 	int the_gcd=gcd(big,small);
-
-  return 0;
+	
+	return 0;
 }
