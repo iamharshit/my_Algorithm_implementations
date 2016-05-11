@@ -8,8 +8,7 @@ int gcd(int x,int y){
     else return gcd(y%x,x);
 }
 
-int main()
-{
+int main(){
 	int a; cin>>a;
 	int b; cin>>b;
 
