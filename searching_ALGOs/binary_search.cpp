@@ -4,8 +4,8 @@ using namespace std;
 vector<int> vec;
 
 #define INPUT(_x) int _x;cin>>_x;
-#define FOR(i,a,b) for(int i=a;i<=b;i++)
-#define TCASE int _t;cin>>_t;FOR(i,1,_t)
+#define FOR(_i,_a,_b) for(int _i=_a;_i<=_b;_i++)
+#define TCASE int _t;cin>>_t;FOR(_i,1,_t)
 #define VECTORFILL(_vec) int _x;cin>>_x;while(_x!=-1){vec.push_back(_x);cin>>_x;}
 #define VECTORPRINT(_vec) int _t=0;while(_t<_vec.size()){cout<<_vec[_t++]<<endl;}
 
