@@ -25,5 +25,5 @@ string STR(int _a){stringstream ss; ss<<_a; return ss.str();}
 
 int main()
 {
-	return 0;
+    return 0;
 }
