@@ -25,5 +25,8 @@ string STR(int _a){stringstream ss; ss<<_a; return ss.str();}
 
 int main()
 {
+    ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	
     return 0;
 }
