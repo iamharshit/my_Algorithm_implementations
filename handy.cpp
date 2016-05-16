@@ -1,13 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
-typedef pair<int,int> pii;
-typedef vector<pair<int,int> > vpii;
-typedef long long ll;
-
-vector<int> vec;
-
 #define input(_x) int _x;cin>>_x;
 #define TCASE int _t;cin>>_t;FOR(_i,1,_t)
 #define FOR(_i,_a,_b) for(int _i=_a;_i<=_b;_i++)
@@ -22,11 +15,17 @@ int ARRSIZE(int arr[]){int index=0;while(arr[index]!=-1){index++;}return index;}
 #define INT(_s) stoi(_s)
 string STR(int _a){stringstream ss; ss<<_a; return ss.str();}
 
+typedef vector<int> vi;
+typedef pair<int,int> pii;
+typedef vector<pair<int,int> > vpii;
+typedef long long int lli;
+
+vi vec;
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	
 	
     return 0;
 }
