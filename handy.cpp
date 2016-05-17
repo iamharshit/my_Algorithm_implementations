@@ -2,10 +2,12 @@
 using namespace std;
 
 #define input(_x) int _x;cin>>_x;
+#define input_s(_x) string _x;cin>>_x;
 #define TCASE int _t;cin>>_t;FOR(_i,1,_t)
 #define FOR(_i,_a,_b) for(int _i=_a;_i<=_b;_i++)
 #define REPEAT(_i,_b) for(int _i=1;_i<=_b;_i++)
 #define VECTORFILL(_vec) int _x;cin>>_x;while(_x!=-1){vec.push_back(_x);cin>>_x;}
+#define VECTOR_FILL(_vec,n) REPEAT(i,n){input(x); _vec.push_back(x);}
 #define VECTORPRINT(_vec) int _t=0;while(_t<_vec.size()){cout<<_vec[_t++]<<endl;}
 #define ARR_SIZE(_arr) sizeof(_arr)/sizeof(_arr[0])
 int ARRSIZE(int arr[]){int index=0;while(arr[index]!=-1){index++;}return index;}
@@ -15,17 +17,18 @@ int ARRSIZE(int arr[]){int index=0;while(arr[index]!=-1){index++;}return index;}
 #define INT(_s) stoi(_s)
 string STR(int _a){stringstream ss; ss<<_a; return ss.str();}
 
+typedef long long int lli;
 typedef vector<int> vi;
+typedef vector<lli> vlli;
 typedef pair<int,int> pii;
 typedef vector<pair<int,int> > vpii;
-typedef long long int lli;
 
 vi vec;
 
 int main()
 {
     ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	
+		
 	
     return 0;
 }
