@@ -24,9 +24,8 @@ int main()
 		NFOR(j,m,v_input[i])  
 		  v_ans[j]=v_ans[j] || v_ans[j-v_input[i] ];
 
-
 	input(sum)
 	cout<<v_ans[sum]<<endl;
 
-  return 0;
+   	return 0;
 }
