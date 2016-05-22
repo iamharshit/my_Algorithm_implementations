@@ -90,16 +90,16 @@ int main(){
 	ll.append(3);
 	ll.append(4);
 	ll.append(5);
-    ll.del(4);
+  ll.del(4);
 
 	ll.print();
 	//ouputs 3->5->
 
-    cout<<ll.count()<<endl;
-    //outputs 2
+  cout<<ll.count()<<endl;
+  //outputs 2
 
-    cout<<ll.position(5)<<endl;
-    //outputs 1
+  cout<<ll.position(5)<<endl;
+  //outputs 1
     
 	return 0;
 }
