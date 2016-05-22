@@ -72,7 +72,7 @@ class linked_list{
 			}
 			cout<<"No such item exist !!!"<<endl;
 		}
-		int position(int val){   // returns -1 if not found otherwise its position (0 based indexing followed)
+		int position(int val){   // returns -1 if not found otherwise its position(0 based indexing followed)
 			int pos=0;
 			node *temp=head;
 			while(temp != NULL){
