@@ -54,7 +54,7 @@ class linked_list{
 			return ct;
 		}
 		void del(int val){
-            node *temp=head;
+        		node *temp=head;
 			if (head->value == val){
 				head=head->next;
 				delete temp;
