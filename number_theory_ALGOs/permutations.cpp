@@ -12,9 +12,9 @@ void permutation(string arr,int start,int endd){
     }
     else 
         FOR(k,start,endd){
-            int t1=arr[start];  arr[start]=arr[k]; arr[k]=t1;
+            swap(arr[start],arr[k]);
             permutation(arr,start+1,endd);
-            int t2=arr[start];  arr[start]=arr[k]; arr[k]=t2;
+            swap(arr[start],arr[k]);
         }
 }
 
