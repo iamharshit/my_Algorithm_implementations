@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int sievearr[1000];
+#define sz 10000000
+int sievearr[sz +1];
 
 #define TCASE int _t;cin>>_t;FOR(i,1,_t)
 #define FOR(_i,_a,_b) for(int _i=_a;_i<=_b;_i++)
@@ -14,16 +15,13 @@ int ARRSIZE(int arr[]){int index=0;while(arr[index]!=-1){index++;}return index;}
 
 void sieve(int n){
 	FOR(i,2,n) sievearr[i]=1;
-	sievearr[n+1]=-1;
-	FOR(i,2,n){
-	 	if(sievearr[i]==1){
+	FOR(i,2,n)
+	 	if(sievearr[i]==1)
 			for(int j=2;i*j<=n;j++) sievearr[i*j]=0;
-		}
-	}
 }
 
 int main()
 {
-	sieve(20);
+	sieve(sz);
   	return 0;
 }
