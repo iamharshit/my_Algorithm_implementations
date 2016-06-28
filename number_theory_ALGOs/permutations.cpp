@@ -1,3 +1,10 @@
+/*
+    equivalent code:
+        do{
+            cout<<s<<endl;
+        }while(next_permutation(s.begin(),s.end()) );
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,7 +14,7 @@ using namespace std;
 void permutation(string arr,int start,int endd){
     if(start==endd){
         FOR(i,0,endd)
-            cout<<arr[i]<<" ";
+            cout<<arr[i];
         cout<<endl;
     }
     else 
