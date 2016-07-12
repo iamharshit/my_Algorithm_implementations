@@ -57,10 +57,6 @@ void path_print(vi arr,int x){
     cout<<endl;
 }
 
-void f(vi arr){
-    cout<<arr[2]<<endl;
-}
-
 int main(){
     int sz=3;
     Graph g(sz);
