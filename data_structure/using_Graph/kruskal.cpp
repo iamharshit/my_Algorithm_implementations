@@ -66,6 +66,7 @@ class Graph{
             for(int i=0;i<=(int)v.size()-1;++i){
                 curr = v[i];
                 if(findset(curr.node1,curr.node2)) continue;
+                unionset(curr.node1,curr.node2);
                 total_weight +=curr.weight;
                 mst.push_back( {curr.weight, curr.node1, curr.node2} );
                 if(mst.size()==n-1) return;
@@ -89,9 +90,9 @@ int main(){
     for(int i=0;i<=(int)g.mst.size()-1;++i)
         cout<<g.mst[i].node1<<" "<<g.mst[i].node2<<" "<<g.mst[i].weight<<endl;
     /* output: edges of mst:
-        0 1 1
-        1 2 1
-        0 3 1
+               0 1 1
+               1 2 1
+               0 3 1
     */
     
     return 0;
