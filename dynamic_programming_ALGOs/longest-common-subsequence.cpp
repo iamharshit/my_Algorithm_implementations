@@ -1,3 +1,6 @@
+// space complexity = O(len(s1) * len(s2))
+// time complexity  = O(len(s1) * len(s2))
+
 #include <bits/stdc++.h>
 using namespace std;
 
