@@ -1,0 +1,69 @@
+//queue implementation
+
+#include<bits/stdc++.h>
+using namespace std;
+
+struct queue_ds{
+	int front;
+	int rear;
+	int item[100];
+};
+
+void en_queue(queue_ds *q, int x){
+	q->item[q->rear] = x;
+	q->rear++;
+}
+
+void print_queue(queue_ds *q){
+	if(q->rear>=100){
+		cout<<"Overflow has occured"<<endl;
+		return;
+	}
+	for(int i=q->front;i<q->rear;i++)
+		cout<<q->item[i]<<" ";
+	cout<<endl;
+}
+
+int empty(queue_ds *q){
+	if(q->rear==q->front) return 1;
+	else return 0;
+}
+
+void de_queue(queue_ds *q){
+	if(empty(q)){
+		cout<<"Underflow has occured"<<endl;
+		return;
+	}
+	cout<<"Dequeued Element="<<q->item[q->front]<<endl;
+	q->front++;
+}
+
+int main(){
+	queue_ds *myqueue = new queue_ds;
+	myqueue->front=0;   myqueue->rear=0;
+	
+	en_queue(myqueue,34);
+	en_queue(myqueue,566);
+	de_queue(myqueue);
+
+	print_queue(myqueue);
+	/*
+	int tmp;
+	while(1){
+		cout<<"push:1   pop:2   exit:4"<<endl;
+		cin>>tmp;
+		if(tmp==1){
+			cout<<"Choice? "; cin>>tmp;
+			push_stack(mystack, tmp);
+		}
+		else if(tmp==2)
+			pop_stack(mystack);		
+		else if(tmp==4)
+			break;
+		else 
+			cout<<"INVALID CHOICE !!!!"<<endl;
+		print_stack(mystack);
+	}
+	*/
+	return 0;
+}
