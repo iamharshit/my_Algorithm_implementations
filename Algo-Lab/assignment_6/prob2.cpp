@@ -10,7 +10,7 @@ using namespace std;
 #define ARR_SIZE(_arr) sizeof(_arr)/sizeof(_arr[0])
 
 class Graph{
-     public:
+ public:
 	int sz;
 	vector<vector<int> > vec; 
 	Graph(int n){
